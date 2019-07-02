@@ -11,7 +11,7 @@ if selinuxenabled ; then
 fi
 
 # Update to latest packages first
-sudo yum -y update
+#sudo yum -y update
 
 # Install EPEL required by some packages
 if [ ! -f /etc/yum.repos.d/epel.repo ] ; then
