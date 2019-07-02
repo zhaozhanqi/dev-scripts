@@ -74,7 +74,6 @@ sudo yum -y install \
   python-netaddr \
   python-openstackclient \
   python-virtualbmc \
-  qemu-kvm \
   virt-install \
   unzip \
   yarn
