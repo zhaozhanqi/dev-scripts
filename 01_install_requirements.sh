@@ -11,7 +11,7 @@ if selinuxenabled ; then
 fi
 
 # Update to latest packages first
-#sudo yum -y update
+sudo yum -y update
 
 # Install EPEL required by some packages
 if [ ! -f /etc/yum.repos.d/epel.repo ] ; then
@@ -52,7 +52,7 @@ popd
 sudo tripleo-repos current-tripleo
 
 # There are some packages which are newer in the tripleo repos
-#sudo yum -y update
+sudo yum -y update
 
 # Setup yarn and nodejs repositories
 sudo curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
@@ -75,6 +75,7 @@ sudo yum -y install \
   python-openstackclient \
   python-virtualbmc \
   virt-install \
+  qemu-kvm \
   unzip \
   yarn
 
